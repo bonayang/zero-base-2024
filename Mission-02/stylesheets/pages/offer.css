@@ -6,7 +6,6 @@
 
 header {
   margin: 100px 0 48px 0;
-  background-color: #bdbdbd;
 }
 
 header h1 {
@@ -56,7 +55,6 @@ section .sec_title .icon_shopping {
 
 .sec_product .col_card .product_card {
   position: relative;
-  background-color: #dbdbdb;
   width: 200px;
   height: 270px;
   margin-right: 5px;
@@ -80,8 +78,7 @@ section .sec_title .icon_shopping {
   left: 20px;
 }
 
-.sec_product .col_card .card_txt {
-  background-color: rgba(0, 0, 255, 0.397);
+.sec_product .col_card .card_txt_wrap {
   width: 172px;
   position: absolute;
   left: 14px;
@@ -92,4 +89,20 @@ section .sec_title .icon_shopping {
   width: 68px;
   height: 12px;
   background-image: url(../../assets/sprites/rating-stars.png);
+}
+
+.card_txt {
+  width: 172px;
+  height: 17px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  margin-bottom: 12px;
+}
+
+.card_txt_col {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12px;
 }
