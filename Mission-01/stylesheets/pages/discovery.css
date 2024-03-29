@@ -1,1 +1,121 @@
 /* CSS 작성 */
+#wrap {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 100px 0 48px 0;
+}
+
+header h1 {
+  color: var(--black);
+}
+
+.sec_title h2 {
+  color: var(--black);
+}
+
+.sec_title span {
+  color: var(--gray--600);
+}
+
+.sec_title .bar {
+  padding: 0 10px;
+}
+
+.blind {
+  overflow: hidden;
+  position: absolute;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  line-height: 1px !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+section .sec_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 0 24px 0;
+}
+
+.col_product {
+  display: block;
+  float: left;
+  width: 1030px;
+  margin-bottom: 16px;
+}
+
+.product_bx {
+  position: relative;
+  display: block;
+  float: left;
+  border: 1px solid var(--gray--500);
+  height: 310px;
+  margin-right: 16px;
+}
+
+.product_bx:last-child {
+  margin: 0;
+}
+
+.product_bx.bx_sm {
+  width: 242px;
+}
+.product_bx.bx_lg {
+  width: 500px;
+}
+
+.product_bx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product_bx .btn {
+  position: absolute;
+  left: 19px;
+  bottom: 19px;
+  width: 42px;
+  height: 42px;
+  background-color: var(--black);
+  opacity: 0.2;
+  color: var(--gray--100);
+  overflow: hidden;
+  transition: background-color, 0.3s;
+}
+
+.product_bx .btn .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product_bx:hover {
+  border: 1px solid var(--blue--500);
+}
+
+.product_bx:hover .btn {
+  opacity: 1;
+  background-color: var(--blue--600);
+  width: 112px;
+}
+
+.product_bx:hover .btn .fa {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.product_bx:hover .btn::before {
+  content: '구매하기';
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
