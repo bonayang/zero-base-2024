@@ -1,1 +1,95 @@
+/* 공통 */
+#wrap {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 100px 0 48px 0;
+  background-color: #bdbdbd;
+}
+
+header h1 {
+  color: var(--black);
+}
+
+.sec_title h2 {
+  color: var(--black);
+}
+
+.sec_title span {
+  color: var(--gray--600);
+}
+
+.sec_title .bar {
+  padding: 0 10px;
+}
+
+.blind {
+  overflow: hidden;
+  position: absolute;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  line-height: 1px !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+section .sec_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 0 24px 0;
+}
+
 /* 오늘의 쇼핑 제안 */
+section .sec_title .icon_shopping {
+  width: 30px;
+  height: 30px;
+  background-image: url(../../assets/icon/shopping.svg);
+}
+
+.sec_product .col_card {
+  display: flex;
+  flex-direction: row;
+}
+
+.sec_product .col_card .product_card {
+  position: relative;
+  background-color: #dbdbdb;
+  width: 200px;
+  height: 270px;
+  margin-right: 5px;
+}
+
+.sec_product .col_card .num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-red-500);
+  color: var(--color-white);
+  font-size: 16px;
+  padding: 3px 10px;
+  border-radius: 0 0 4px 0;
+  z-index: 1;
+}
+
+.sec_product .col_card .card_img {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+}
+
+.sec_product .col_card .card_txt {
+  background-color: rgba(0, 0, 255, 0.397);
+  width: 172px;
+  position: absolute;
+  left: 14px;
+  top: 186px;
+}
+
+.rating-stars {
+  width: 68px;
+  height: 12px;
+  background-image: url(../../assets/sprites/rating-stars.png);
+}

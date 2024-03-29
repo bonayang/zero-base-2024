@@ -1,17 +1,140 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>오늘의 쇼핑 제안 - 쿠팡(Coupang)</title>
-  <link rel="icon" href="/assets/favicon/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/stylesheets/main.css" />
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 쇼핑 제안 - 쿠팡(Coupang)</title>
+    <link rel="icon" href="./assets/favicon/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- 헤더 (starst) -->
+      <header>
+        <a href="https://www.coupang.com/" class="logo">
+          <h1 class="blind">쿠팡</h1>
+          <picture>
+            <source srcset="./assets/logo/logo.webp" type="image/webp" />
+            <img data-src="./assets/logo/logo.png" alt="logo" height="40" width="176" />
+          </picture>
+        </a>
+      </header>
+      <!-- // 헤더 (end) -->
+
+      <!-- sec 오늘의 쇼핑 제안 (starst) -->
+      <section>
+        <!-- sec_title (starst) -->
+        <div class="sec_title">
+          <div class="icon_shopping"></div>
+          <h2>오늘의 쇼핑 제안</h2>
+        </div>
+        <!-- // sec_title (end) -->
+
+        <!-- sec_product (starst) -->
+        <div class="sec_product">
+          <div class="col_card">
+            <a href="/" class="product_card">
+              <div class="num">
+                <span class="blind">할인율:</span>
+                <span>30%</span>
+              </div>
+              <div class="card_txt">
+                <div class="rating-stars"><span class="blind">평점 점수: 4.5</span></div>
+                <div><span class="blind">리뷰 수:</span><span>(3,255)</span></div>
+              </div>
+
+              <img
+                src="./assets/offer/furniture.jpg"
+                alt="솔로리빙 셀린 렌지대"
+                width="160"
+                height="160"
+                class="card_img"
+              />
+            </a>
+
+            <a href="/" class="product_card">
+              <div class="card_txt">
+                <span class="blind">배송유형 : 로켓배송</span>
+                <img src="./assets/icon/badge-rocket.svg" alt="로켓배송" />
+                <div class="rating-stars"><span class="blind">평점 점수: 4.5</span></div>
+                <div><span class="blind">리뷰 수:</span><span>(1,807)</span></div>
+              </div>
+              <img
+                src="./assets/offer/renton.jpg"
+                alt="옆 동네몰 레트로 LED 감성"
+                width="160"
+                height="160"
+                class="card_img"
+              />
+            </a>
+
+            <a href="/" class="product_card">
+              <div class="card_txt">
+                <span class="blind">배송유형 :</span>
+                <span>무료배송</span>
+                <div class="rating-stars"><span class="blind">평점 점수: 4.0</span></div>
+                <div><span class="blind">리뷰 수:</span><span>(2,423)</span></div>
+              </div>
+              <img
+                src="./assets/offer/drying-rack.jpg"
+                alt="프리미엄 부착식 식기건조대"
+                width="160"
+                height="160"
+                class="card_img"
+              />
+            </a>
+
+            <a href="/" class="product_card">
+              <div class="num">
+                <span class="blind">할인율:</span>
+                <span>10%</span>
+              </div>
+              <div class="card_txt">
+                <span class="blind">배송유형 : 로켓배송</span>
+                <img src="./assets/icon/badge-rocket.svg" alt="로켓배송" />
+                <div class="rating-stars"><span class="blind">평점 점수: 5</span></div>
+                <div><span class="blind">리뷰 수:</span><span>(1,009)</span></div>
+              </div>
+              <img
+                src="./assets/offer/boohgle.jpg"
+                alt="타지 않는 냄비 보오글 네모"
+                width="160"
+                height="160"
+                class="card_img"
+              />
+            </a>
+
+            <a href="/" class="product_card">
+              <div class="num">
+                <span class="blind">할인율:</span>
+                <span>25%</span>
+              </div>
+              <div class="card_txt">
+                <span class="blind">배송유형 :</span>
+                <span>무료배송</span>
+                <div class="rating-stars"><span class="blind">평점 점수: 4</span></div>
+                <div><span class="blind">리뷰 수:</span><span>(3,203)</span></div>
+              </div>
+              <img
+                src="./assets/offer/deskset.jpg"
+                alt="베스트리빙 베이직 멀티 H"
+                width="160"
+                height="160"
+                class="card_img"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- sec_product (end) -->
+      </section>
+      <!-- // sec 오늘의 쇼핑 제안 (end) -->
+    </div>
+  </body>
 </html>
